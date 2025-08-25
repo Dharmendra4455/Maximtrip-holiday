@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="swipper-bundle.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="./images/maximtrip-logo.png" alt="Company Logo">
+        <input class="search-input" type="text" placeholder="Search..">
+        <div class="navrightcontent">
+            <div class="call" style="display: flex; justify-content: center; align-items: center;gap: 2px;">
+                <img style="width:15px" src="./images/call3.svg" alt="">
+                <span>+91-9797996205</span>
+            </div>
+            <div class="holyday" style="display: flex; justify-content: center; align-items: center;gap: 5px;">
+                <img style="width:15px;" src="./images/mail.svg" alt="">
+                <span>holiday@maximtrip.in</span>
+            </div>
+            <div class="telegram" style="   display:flex;justify-content: center;align-items: center;">
+                <img style="width:30px;height:30px;padding: 3px;border-radius: 50%; background-color: #f04242; object-position :-1px 2px;"
+                    src="./images/paperplane-svgrepo-com.svg">
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel_container">
+
+        <div class="slide_Container">
+
+            <div class="prev">
+                <img onclick=prevhandler() src="./images/" alt="">
+            </div>
+            <div onclick=forwardhandler() class="forward">
+                <img src="./images/circle-arrow-indicator-right-svgrepo-com.svg" alt="">
+            </div>
+
+            <div class="slide_page" id="slide1" style="background-image:url('./images/valley.jpeg'); z-index: 4;">
+                <div class="witten_content">
+                    <div class="heading">Kashmir A Frozen Dream Vacation</div>
+
+                    <div class="day">8 days /7 Nights</div>
+                    <div class="amount">24199 <del style="margin-left: 10px;">26198</del></div>
+                    <button class="connect_with">CONNECT WITH AN EXPERT</button>
+                </div>
+            </div>
+            <div class="slide_page" id="slide2" style="z-index: 3; background-image:url('./images/river1.jpeg');">
+                <div class="witten_content">
+                    <div class="heading">Kashmir Escapes At Smart Price</div>
+
+                    <div class="day">7 days / 6 Nights</div>
+                    <div class="amount">14599 <del style="margin-left: 10px;">16599</del></div>
+                    <button class="connect_with">CONNECT WITH AN EXPERT</button>
+                </div>
+            </div>
+
+            <div class="slide_page" id="slide3"
+                style="z-index: 1;background-image:url('./images/o3ngiagi5i1ymwviltte.jpeg');">
+                <div class="witten_content">
+                    <div class="heading">Kashmir Unplugged</div>
+
+                    <div class="day">6 days / 5 Nights</div>
+                    <div class="amount">16799 <del style="margin-left: 10px;">19799</del></div>
+                    <button class="connect_with">CONNECT WITH AN EXPERT</button>
+                </div>
+            </div>
+            <div class="slide_page" id="slide4" style="z-index: 2; background-image:url('./images/boat.jpeg');">
+                <div class="witten_content">
+                    <div class="heading">Colors Of Kashmir </div>
+
+                    <div class="day">5 days / 4 Nights</div>
+                    <div class="amount">13500 <del style="margin-left: 10px;">15000</del></div>
+                    <button class="connect_with">CONNECT WITH AN EXPERT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Card-Slider -->
+
+    <div class="slide-container swiper">
+        <h1 style="display: inline-block;margin-bottom: 8px;;margin-left:16px"><span
+                style="color: #f04242;">Holiday</span><span style="color: black;"> Category</span></h1>
+        <div
+            style="width:90px;background-color: #f04242;height:4px;margin-left:16px;border-radius:20px;margin-bottom: 50px;">
+        </div>
+        <div class="slide-content" style="margin-left: 16px;">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content"
+                        style="background-image: url('./images/pwixt57oqj6ezfhk1vwq.png'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:larger; font-weight: 600; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Kashmir Tour Packages1</div>
+                        <div class="button_icon"
+                            style="display: flex;justify-content: space-around; margin-bottom: 20px;">
+                            <div class="call" style="height: 35px;background-image: url('./images/call-svgrepo-com.svg'); width: 35px; border:2px solid #f04242;border-radius: 8px; background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <button
+                                style="cursor: pointer; border:none; border-radius: 8px;padding-left: 15px;padding-right: 15px;font-size: large;font-weight: 500;color: white;background-color:#f04242 ;">Request
+                             Callback</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content"
+                        style="background-image: url('./images/pwixt57oqj6ezfhk1vwq.png'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-2"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:larger; font-weight: 600; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Kashmir Tour Packages2</div>
+                        <div class="button_icon"
+                            style="display: flex;justify-content: space-around; margin-bottom: 20px;">
+                            <div class="call" style="height: 35px;background-image: url('./images/call-svgrepo-com.svg'); width: 35px; border:2px solid #f04242;border-radius: 8px; background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <button
+                                style="cursor: pointer; border:none; border-radius: 8px;padding-left: 15px;padding-right: 15px;font-size: large;font-weight: 500;color: white;background-color:#f04242 ;">Request
+                             Callback</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content"
+                        style="background-image: url('./images/pwixt57oqj6ezfhk1vwq.png'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-3"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:larger; font-weight: 600; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Kashmir Tour Packages3</div>
+                        <div class="button_icon"
+                            style="display: flex;justify-content: space-around; margin-bottom: 20px;">
+                            <div class="call" style="height: 35px;background-image: url('./images/call-svgrepo-com.svg'); width: 35px; border:2px solid #f04242;border-radius: 8px; background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <button
+                                style="cursor: pointer; border:none; border-radius: 8px;padding-left: 15px;padding-right: 15px;font-size: large;font-weight: 500;color: white;background-color:#f04242 ;">Request
+                             Callback</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content"
+                        style="background-image: url('./images/pwixt57oqj6ezfhk1vwq.png'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:larger; font-weight: 600; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Kashmir Tour Packages4</div>
+                        <div class="button_icon"
+                            style="display: flex;justify-content: space-around; margin-bottom: 20px;">
+                            <div class="call" style="height: 35px;background-image: url('./images/call-svgrepo-com.svg'); width: 35px; border:2px solid #f04242;border-radius: 8px; background-position: center;background-size: cover;">
+                                
+                            </div>
+                            <button
+                                style="cursor: pointer; border:none; border-radius: 8px;padding-left: 15px;padding-right: 15px;font-size: large;font-weight: 500;color: white;background-color:#f04242 ;">Request
+                             Callback</button>
+                        </div>
+
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn">
+        </div>
+        <div class="swiper-button-prev swiper-navBtn">
+            <img src="./images/backward.svg" alt="Prev" style="width:27px;height:28px;vertical-align:middle;" />
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Holiday packages -->
+
+
+    <div class="slide-container1 swiper">
+        <h1 style="display: inline-block;margin-bottom: 8px;;margin-left:16px"><span
+                style="color: red;">Holiday</span><span style="color: black;"> Packages</span></h1>
+        <div
+            style="width:90px;background-color: #ce3c3d;height:4px;margin-left:16px;border-radius:20px;margin-bottom: 50px;">
+        </div>
+        <div class="slide-content1" style="margin-left: 16px;">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content1"
+                        style="background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:medium; font-weight: 550; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Colors Of Kashmir1</div>
+                        <div class="day"
+                            style="color: #464545; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/clock.svg" alt="">
+                            <div>5 Days / 4 Night</div>
+                        </div>
+                        <div class="location"
+                            style="color: #464545;; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/location.svg" alt="">
+                            <div>Kashmir</div>
+                        </div>
+                        <div class="price_viewmore"
+                            style="color: #464545; display: flex; margin-left: 0px;margin-top: 15px; margin-bottom: 15px; font-size: 15px; font-weight: 150;align-items: center; ">
+                            <div class="price"
+                                style="padding:12px 46px 12px 46px;  border: 1px solid #f04242; border-right: none;">
+                                Rs.13500</div>
+                            <div class="viewmore"
+                                style="padding:12px 30px 12px 30px;  border: 1px solid #f04242;">View More
+                            </div>
+                        </div>
+
+                        <div class="button_icon"
+                            style="display: flex;justify-content:space-between; margin-bottom: 0px;">
+                            <div class="call"
+                        style="height: 40px;width: 40px ;border: 2px  solid #f04242;border-radius:0px 0px 0px  15px;background-image: url('./images/call-svgrepo-com.svg'); background-position: center;background-size: cover;"></div>
+                            <button
+                                style="border: none;border-radius: 8px 8px 15px 8px;padding-left: 40px;padding-right: 40px;font-size: large;font-weight: 500;color: white;background-color:#f04242;">Request
+                                Callback</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card swiper-slide">
+                    <div class="image-content1"
+                        style="background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-2"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:medium; font-weight: 550; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Colors Of Kashmir2</div>
+                        <div class="day"
+                            style="color: #464545; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/clock.svg" alt="">
+                            <div>5 Days / 4 Night</div>
+                        </div>
+                        <div class="location"
+                            style="color: #464545;; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/location.svg" alt="">
+                            <div>Kashmir</div>
+                        </div>
+                        <div class="price_viewmore"
+                            style="color: #464545; display: flex; margin-left: 0px;margin-top: 15px; margin-bottom: 15px; font-size: 15px; font-weight: 150;align-items: center; ">
+                            <div class="price"
+                                style="padding:12px 46px 12px 46px;  border: 1px solid #f04242; border-right: none;">
+                                Rs.13500</div>
+                            <div class="viewmore"
+                                style="padding:12px 30px 12px 30px;  border: 1px solid #f04242;">View More
+                            </div>
+                        </div>
+
+                        <div class="button_icon"
+                            style="display: flex;justify-content:space-between; margin-bottom: 0px;">
+                            <div class="call"
+                        style="height: 40px;width: 40px ;border: 2px  solid #f04242;border-radius:0px 0px 0px  15px;background-image: url('./images/call-svgrepo-com.svg'); background-position: center;background-size: cover;"></div>
+                            <button
+                                style="border: none;border-radius: 8px 8px 15px 8px;padding-left: 40px;padding-right: 40px;font-size: large;font-weight: 500;color: white;background-color:#f04242;">Request
+                                Callback</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="card swiper-slide">
+                    <div class="image-content1"
+                        style="background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-3"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:medium; font-weight: 550; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Colors Of Kashmir3</div>
+                        <div class="day"
+                            style="color: #464545; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/clock.svg" alt="">
+                            <div>5 Days / 4 Night</div>
+                        </div>
+                        <div class="location"
+                            style="color: #464545;; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/location.svg" alt="">
+                            <div>Kashmir</div>
+                        </div>
+                        <div class="price_viewmore"
+                            style="color: #464545; display: flex; margin-left: 0px;margin-top: 15px; margin-bottom: 15px; font-size: 15px; font-weight: 150;align-items: center; ">
+                            <div class="price"
+                                style="padding:12px 46px 12px 46px;  border: 1px solid #f04242; border-right: none;">
+                                Rs.13500</div>
+                            <div class="viewmore"
+                                style="padding:12px 30px 12px 30px;  border: 1px solid #f04242;">View More
+                            </div>
+                        </div>
+
+                        <div class="button_icon"
+                            style="display: flex;justify-content:space-between; margin-bottom: 0px;">
+                            <div class="call"
+                        style="height: 40px;width: 40px ;border: 2px  solid #f04242;border-radius:0px 0px 0px  15px;background-image: url('./images/call-svgrepo-com.svg'); background-position: center;background-size: cover;"></div>
+                            <button
+                                style="border: none;border-radius: 8px 8px 15px 8px;padding-left: 40px;padding-right: 40px;font-size: large;font-weight: 500;color: white;background-color:#f04242;">Request
+                                Callback</button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="card swiper-slide">
+                    <div class="image-content1"
+                        style="background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                    </div>
+                    <span class="overlay" id="overlay-4"></span>
+                    <div class="written_content">
+                        <div
+                            style="margin-left: 16px;margin-top: 16px;margin-bottom: 16px;font-size:medium; font-weight: 550; color: rgb(22, 22, 22);font-family:Arial, Helvetica, sans-serif;">
+                            Colors Of Kashmir4</div>
+                        <div class="day"
+                            style="color: #464545; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/clock.svg" alt="">
+                            <div>5 Days / 4 Night</div>
+                        </div>
+                        <div class="location"
+                            style="color: #464545;; display: flex; gap: 16px;margin-left: 16px; font-size: 14px; font-weight: 150;align-items: center; ">
+                            <img src="./images/location.svg" alt="">
+                            <div>Kashmir</div>
+                        </div>
+                        <div class="price_viewmore"
+                            style="color: #464545; display: flex; margin-left: 0px;margin-top: 15px; margin-bottom: 15px; font-size: 15px; font-weight: 150;align-items: center; ">
+                            <div class="price"
+                                style="padding:12px 46px 12px 46px;  border: 1px solid #f04242; border-right: none;">
+                                Rs.13500</div>
+                            <div class="viewmore"
+                                style="padding:12px 30px 12px 30px;  border: 1px solid #f04242;">View More
+                            </div>
+                        </div>
+
+                        <div class="button_icon"
+                            style="display: flex;justify-content:space-between; margin-bottom: 0px;">
+                            <div class="call"
+                        style="height: 40px;width: 40px ;border: 2px  solid #f04242;border-radius:0px 0px 0px  15px;background-image: url('./images/call-svgrepo-com.svg'); background-position: center;background-size: cover;"></div>
+                            <button
+                                style="border: none;border-radius: 8px 8px 15px 8px;padding-left: 40px;padding-right: 40px;font-size: large;font-weight: 500;color: white;background-color:#f04242;">Request
+                                Callback</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+         <div class="swiper-button-next swiper-navBtn">
+            
+        </div>
+        <div class="swiper-button-prev swiper-navBtn">
+            <img src="./images/backward.svg" alt="Prev" style="width:27px;height:28px;vertical-align:middle;" />
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+<!-- Popular Dstination -->
+
+
+
+ <div class="slide-container2 swiper">
+        <h1 style="display: inline-block;margin-bottom: 8px;;margin-left:16px"><span
+                style="color: #f04242;">Popular</span><span style="color: black;"> Destinations</span></h1>
+        <div
+            style="width:90px;background-color: #f04242;height:4px;margin-left:16px;border-radius:20px;margin-bottom: 50px;">
+        </div>
+        <div class="slide-content2" style="margin-left: 16px;">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content2" onmouseover=hoverfun() onmouseout=removehover() 
+                        
+                     style="padding-top: 150px; background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                      <div style="font-size:18px;color:white; text-align:center;"> Place To Visit in Gulmarge</div>
+                      
+                      <div class="placetovisit"id="placetovisit" > Place To Visit in Gulmarge</div>
+                      
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content2" onpointermove=hoverfun() onmouseout=removehover() 
+                        
+                     style="padding-top: 150px; background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                      <div style="font-size:18px;color:white; text-align:center;"> Place To Visit in Gulmarge</div>
+                      
+                      <div class="placetovisit" id="placetovisit1"> Place To Visit in Gulmarge</div>
+                      
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+         <div class="swiper-button-next swiper-navBtn">
+            
+        </div>
+        <div class="swiper-button-prev swiper-navBtn">
+            <img src="./images/backward.svg" alt="Prev" style="width:27px;height:28px;vertical-align:middle;" />
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+<!-- Popular Dstination -->
+
+
+
+ <div class="slide-container2 swiper">
+        <h1 style="display: inline-block;margin-bottom: 8px;;margin-left:16px"><span
+                style="color: #f04242;">Popular</span><span style="color: black;"> Destinations</span></h1>
+        <div
+            style="width:90px;background-color: #f04242;height:4px;margin-left:16px;border-radius:20px;margin-bottom: 50px;">
+        </div>
+        <div class="slide-content2" style="margin-left: 16px;">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content2" onmouseover=hoverfun() onmouseout=removehover() 
+                        
+                     style="padding-top: 150px; background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                      <div style="font-size:18px;color:white; text-align:center;"> Place To Visit in Gulmarge</div>
+                      
+                      <div class="placetovisit"id="placetovisit" > Place To Visit in Gulmarge</div>
+                      
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content2" onpointermove=hoverfun() onmouseout=removehover() 
+                        
+                     style="padding-top: 150px; background-image: url('./images/boat.jpeg'); background-size: cover; background-position: calc(0px 18px);background-repeat: no-repeat;">
+                      <div style="font-size:18px;color:white; text-align:center;"> Place To Visit in Gulmarge</div>
+                      
+                      <div class="placetovisit" id="placetovisit1"> Place To Visit in Gulmarge</div>
+                      
+                    </div>
+                    <span class="overlay" id="overlay-1"></span>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+         <div class="swiper-button-next swiper-navBtn">
+            
+        </div>
+        <div class="swiper-button-prev swiper-navBtn">
+            <img src="./images/backward.svg" alt="Prev" style="width:27px;height:28px;vertical-align:middle;" />
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="./swipper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
